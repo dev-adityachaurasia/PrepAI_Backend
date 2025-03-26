@@ -11,6 +11,8 @@ const userSchema = new mongooose.Schema(
       enum: ["Male", "Female", "Other"], // ✅ Only these values are allowed
       required: true,
     },
+    score: { type: Number },
+    daily_quiz: { type: Number },
   },
   { timestamps: true }
 );
